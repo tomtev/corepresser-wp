@@ -1,0 +1,66 @@
+/*--------------------------------------------------------------
+# Grid
+--------------------------------------------------------------*/
+.site{
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 32px);
+  margin: 0 auto;
+  background-color: #FFF;
+}
+
+.wrapper{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-wrapper{
+  flex: 1;
+  background-color: #f3f3f3;
+}
+
+.content {
+  margin: 0 auto;
+  flex: 1;
+  min-width: 300px;
+  margin-bottom: 30px;
+}
+
+.content-box {
+  background-color: #FFF;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.container-compact,
+.site-container,
+.content.container {
+  padding-top: 30px;
+}
+
+.container{
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.container-full-width{
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 0;
+  .entry-footer {
+    position: absolute;
+  }
+  .content-box {
+    padding: 0!important;
+    margin: 0!important;
+  }
+}
+
+.container-compact{
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+.hidden, [hidden] {
+  display: none!important;
+}

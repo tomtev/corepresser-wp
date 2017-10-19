@@ -1,0 +1,46 @@
+.content > .product{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product .summary{
+  flex: 1;
+  min-width: 200px;
+}
+
+.woocommerce-product-gallery{
+  width: 100%;
+  max-width: 450px; // Add with php
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+.woocommerce-tabs{
+  width: 100%;
+}
+
+.woocommerce-result-count{
+  padding: 0;
+  margin: 0;
+}
+
+.woocommerce-breadcrumb{
+  width: 100%;
+  white-space: nowrap;
+  margin-bottom: 15px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.woocommerce-product-gallery__trigger,
+.onsale{
+  position: absolute;
+}
+
+.page-numbers li{
+  list-style: none;
+  display: inline-flex;
+}

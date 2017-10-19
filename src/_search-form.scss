@@ -1,0 +1,8 @@
+.search-form {
+  display: flex;
+  
+  > label {
+    flex: 1;
+    margin-right: .5em;
+  }
+}

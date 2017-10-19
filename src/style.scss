@@ -1,0 +1,54 @@
+/*!
+Theme Name: CorePresser
+Theme URI: http://corepresser.com/
+Author: corepresser.com
+Author URI: http://corepresser.com/
+Description: A super lightweight theme optimized for WordPress Page Builders
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: corepresser
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+@import "variables";
+@import "base";
+@import "tables";
+@import "links";
+@import "nav";
+@import "nav-dropdown";
+@import "typography";
+@import "forms";
+@import "buttons";
+@import "search-form";
+@import "lists";
+@import "grid";
+@import "columns";
+@import "toggle-button";
+@import "flex";
+@import "header";
+@import "menus";
+@import "footer";
+@import "logo";
+@import "nav-tabs";
+@import "posts";
+@import "widgets";
+@import "label";
+@import "dark";
+@import "mobile";
+@import "customizer-frontend";
+
+
+@import "woocommerce/product-page";
+@import "woocommerce/product-list";
+@import "woocommerce/product-widget";
+@import "woocommerce/qty";
+@import "woocommerce/category";
+@import "woocommerce/checkout";
+@import "woocommerce/cart";
+@import "woocommerce/messages";
+@import "woocommerce/account";
+@import "edd/checkout";

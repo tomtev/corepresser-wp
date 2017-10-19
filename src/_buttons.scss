@@ -1,0 +1,60 @@
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.page-numbers a,
+.page-numbers span {
+  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid;
+  transition: all .2s;
+  border-color: currentColor;
+  font-size: .9em;
+  border-radius: 3px;
+  background: transparent;
+  color: $primary-color;
+  line-height: $form-height;
+  padding: 0 1em;
+}
+
+.button:hover,
+.button.primary,
+.button.checkout,
+.button.alt,
+.button:active,
+.page-numbers span,
+.page-numbers a:hover,
+button:active, button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus,
+.button:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  color: #FFF;
+  background-color: $primary-color;
+  border-color: transparent;
+}
+
+.button + .button{
+  margin-left: 1em;
+}
+
+.button span,
+button span{
+  display: flex;
+  align-items: center;
+}
+
+.button svg,
+button svg{
+  margin-left: -5px;
+  margin-right: 7px;
+}

@@ -1,0 +1,124 @@
+@media (min-width: $small-screen) {
+
+  .nav-menu li {
+    position: relative;
+  }
+
+  .nav-menu .sub-menu{
+    margin:0;
+    position: absolute;
+    background-color: #FFF;
+    opacity: 0;
+    left: -20px;
+    top: -99999px;
+    border-radius: 3px;
+    transform: translateY(0px);
+    transition: opacity .5s, transform .6s $easing;
+    min-width: 220px;
+    box-shadow: 2px 2px 15px rgba(0,0,0,.3);
+    padding: 15px;
+    z-index: 999;
+  }
+  .nav-menu  > li.active > ul,
+  .nav-menu  > li:hover > ul {
+    opacity: 1;
+    top: 100%;
+    transition-delay: .1s;
+    transform: translateY(0);
+  }
+
+  .nav-menu .sub-menu li:hover > ul{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: .1s;
+    top:-15px;
+    left: calc(100% + 10px);
+  }
+
+  .nav-right .nav-menu > li > ul{
+    left: auto;
+    right: -20px;
+  }
+
+  .nav-center .nav-menu > li > ul{
+    left: -50px;
+  }
+
+
+  .nav-menu > li.menu-item-has-children > a:before{
+    bottom:0;
+    left: 50%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    transform: translateY(3px);
+    pointer-events: none;
+    opacity: 0;
+    z-index: 9999;
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #FFF;
+    border-width: 8px;
+    margin-left: -10px;
+  }
+
+  .nav-menu > li.menu-item-has-children:hover > a:before{
+    transition: opacity .3s, transform .2s;
+    transition-delay: .25s;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .nav-menu .sub-menu > li {
+    > a{
+      padding: .5em 1.2em;
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+    &:hover > a {
+      background-color: rgba(0,0,0,.05);
+    }
+  }
+
+  .nav-menu > li > a svg.feather-chevron-right,
+  .nav-menu > li > a svg.feather-chevron-down{
+    margin-right: -.5em;
+  }
+
+}
+
+
+/* Mobile */
+@media (max-width: $small-screen) {
+  
+  .nav-menu .sub-menu{
+    display: none;
+    font-size: .9em;
+    margin-left: .5em;
+    margin-bottom: 1em;
+  }
+
+  .nav-menu > li {
+    border-bottom: 1px solid #f1f1f1;
+    margin:0;
+  }
+
+  .nav-wrapper {
+    width: 100%;
+  }
+
+  .nav-wrapper .menu{
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    > li{
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+  .is-divider {
+    display: none;
+  }
+}
+

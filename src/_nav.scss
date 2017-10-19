@@ -1,0 +1,94 @@
+
+/*--------------------------------------------------------------
+## Menu
+--------------------------------------------------------------*/
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-right,
+.nav-right .nav-menu{
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+.nav-center,
+.nav-center .nav-menu{
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.tabs,
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin:0;
+  padding:0;
+  font-size: .95em;
+
+  .sub-menu {
+    display: block;
+  }
+
+  > li {
+    list-style: none;
+    margin: 0 10px;
+  }
+
+  > li > a,
+  > li > a,
+  .sub-menu > li > a{
+    color: currentColor;
+    transition: opacity .1s, background-color .2s;
+    padding: .5em 0;
+    opacity: .8;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  > li:hover >  a,
+  > li >  a.active,
+  > li.active >  a{
+    opacity: 1;
+  }
+
+  > li:first-child{
+    margin-left:0!important;
+  }
+
+  > li:last-child{
+    margin-right:0!important;
+  }
+}
+
+li.current-menu-parent > a,
+li.current-menu-ancestor > a,
+li.current-menu-item > a{
+  font-weight: bold;
+  opacity: 1;
+}
+
+.nav-menu > li.is-divider {
+  margin: 0;
+}
+
+.nav-divider{
+  height: 2em;
+  margin: 0 .1em;
+  width: 1px;
+  opacity: .15;
+  background-color: currentColor;
+}
+
+.nav-menu a .fa {
+    order: -1;
+    margin-right: .35em;
+    min-width: 1.2em;
+}

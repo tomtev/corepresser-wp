@@ -1,0 +1,26 @@
+.menu-item-has-children > a{
+  display: flex;
+  align-items: center;
+  
+  svg.feather-chevron-right,
+  svg.feather-chevron-down {
+    margin-left: auto;
+    color: currentColor;
+    opacity: .5;
+    height: 1.2em;
+    width: 1.2em;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+ul.children,
+ul.sub-menu{
+  display: none;
+
+  .active > &{
+    display: block!important;
+  }
+}

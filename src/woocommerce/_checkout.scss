@@ -1,0 +1,28 @@
+.form-row{
+  min-width: 50%;
+}
+.form-row-wide{
+  min-width: 100%;
+}
+
+#order_review_heading{
+  display: none;
+}
+
+.woocommerce-validated{
+  input {
+  border-color: green;
+  }
+  label {
+  color: green;
+  }
+}
+
+.woocommerce-invalid{
+  input {
+  border-color: red;
+  }
+  label {
+  color: red;
+  }
+}

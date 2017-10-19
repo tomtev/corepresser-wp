@@ -1,0 +1,71 @@
+$small-class: sm !default;
+$medium-class: md !default;
+$large-class: lg !default;
+
+/* Columns
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.nav-links,
+.columns{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+
+  > * {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.nav-links,
+.columns--auto{
+   > * {
+    flex-basis: 100%;
+    max-width: 100%;
+    min-width: 150px;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  > *:last-child {
+    justify-content: flex-end;
+  }
+}
+
+/* Small */
+@media screen and (max-width: $small-screen) {
+  .columns > *{
+    width: 100%;
+  }
+}
+
+
+/* Columns */
+@for $i from 1 through 6 {
+  .#{$small-class}-columns-#{$i} > * {
+     max-width: 100/$i +%;
+     flex-basis: 100/$i +%;
+  }
+}
+
+/* Tablets */
+@media screen and (min-width: $small-screen) {
+
+  @for $i from 1 through 6 {
+    .#{$medium-class}-columns-#{$i} > * {
+        max-width: 100/$i +%;
+        flex-basis: 100/$i +%;
+    }
+  }
+
+}
+
+/* Desktop */
+@media screen and (min-width: $medium-screen) {
+
+  @for $i from 1 through 6 {
+    .#{$large-class}-columns-#{$i} > * {
+      max-width: 100/$i +%;
+      flex-basis: 100/$i +%;
+    }
+  }
+}

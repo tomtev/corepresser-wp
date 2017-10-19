@@ -1,0 +1,70 @@
+.customizer-helper{
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.customizer-helper.layout{
+  position: fixed;
+  z-index: 9;
+  left:0;
+  top:0;
+  bottom:0;
+  width: 30px;
+}
+
+.customizer-helper.layout:hover,
+.widget-area:hover .customizer-helper,
+.header:hover .customizer-helper{
+  opacity: 1;
+}
+
+.customizer-helper .overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: rgba(#0085ba, .05);
+  border: 1px solid rgba(#0085ba, .6);
+  pointer-events: none;
+}
+
+.customizer-helper .tool{
+  z-index: 99999;
+  position: absolute;
+  background-color: #0085ba;
+  white-space: nowrap;
+  border: 1px solid #FFF;
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  padding: 0px 5px; 
+  color:#FFF;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom:-10px;
+  box-shadow: 0 2px 1px rgba(46,68,83,.15);
+
+  &--top{
+    bottom: auto;
+    top: -10px;
+  }
+
+  &--left{
+    bottom: auto;
+    top: 50%;
+    transform: rotate(270deg);
+    transform-origin: 0 0;
+    left: 100%;
+    margin-left: -15px;
+  }
+
+  svg {
+    width: 20px;
+    fill: #FFF;
+  }
+}
+
+.customize-partial-edit-shortcut{
+  transform: scale(.8);
+}

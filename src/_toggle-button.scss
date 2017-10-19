@@ -1,0 +1,14 @@
+.menu-toggle { 
+  touch-action: none;
+  color: currentColor;
+}
+
+.toggled .menu-toggle-open{
+  display: none;
+}
+
+.header:not(.toggled) {
+  .menu-toggle-close{
+    display: none;
+  }
+}

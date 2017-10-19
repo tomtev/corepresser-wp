@@ -1,0 +1,17 @@
+.widget-area{
+  position: relative;
+  font-size: .9em;
+  min-width: 25%;
+}
+
+.widget li{
+  padding: 5px 0;
+}
+
+.widget li + li{
+  border-top: 1px solid $border-color-light;
+}
+
+.widget-title{
+  font-size: 1.2em;
+}

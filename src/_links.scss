@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  opacity: 1!important;
+}
+
+a svg {
+  vertical-align: middle;
+  height: 1.2em;
+  width: 1.2em;
+  margin: 0 .3em;
+  color: currentColor;
+  position: relative;
+  + span{
+    margin-left: .35em;
+  }
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+a.remove{
+  color: currentColor;
+  border: 1px solid currentColor;
+  opacity: .5;
+  line-height: 13px;
+  font-weight: bold;
+  padding-left: 1px;
+  font-size: 12px;
+  height: 16px;
+  min-width: 16px;
+  text-align: center;
+  border-radius: 99px;
+  display: inline-block;
+}

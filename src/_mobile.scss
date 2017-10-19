@@ -1,0 +1,7 @@
+/* Hide Show Stuff */
+.show-for-small{display: none;}
+
+@media (max-width: $small-screen) {
+  .show-for-small{display: block;}
+  .hide-for-small{display: none;}
+}
