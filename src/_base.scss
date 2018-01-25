@@ -19,9 +19,7 @@ html {
 body {
   margin: 0 auto;
   scroll-behavior: smooth;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
+  
   &.menu-open {
     max-height: 100vh;
     overflow: hidden;

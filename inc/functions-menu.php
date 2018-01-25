@@ -52,7 +52,7 @@ function corepresser_menu_item_args ( $args, $item, $depth ) {
 
   if (strpos($classes, 'icon-') !== false) {
    ob_start();
-   get_template_part('template-parts/icons/icon','bag');
+   get_template_part('template-parts/icons/icon','shopping-bag');
    $icon = ob_get_clean();
    $args->link_before = $icon . '<span>';
    $args->link_after = '</span>' . $args->link_after;
